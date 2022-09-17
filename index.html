@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <title>Excuse me, but wtf</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="description" content="" />
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <link rel="stylesheet" href="assets/styles.css" />
+  </head>
+
+  <body class="cloudy">
+    <main>
+      <div class="content">
+        <div class="excuse-me"">
+          <h1>Excuse me,</h1>
+          <h2>&nbsp;&nbsp;&nbsp;&nbsp;but...</h2>
+        </div>
+        <button onclick="wtf()">what the fuck</button>
+      </div>
+    </main>
+
+
+    <audio id="dundun">
+      <source src="assets/tooltime3.mp3" type="audio/mpeg">
+    </audio>
+    <div class="al-container">
+      <img id="al" class="al-initial-position" src="assets/idontthinksotim.png"/>
+    </div>
+  </body>
+
+  <script type="text/javascript">
+    function wtf() {
+      const button = document.getElementsByTagName('button')[0]
+      button.setAttribute('disabled', 'true');
+
+      const audio = document.getElementById('dundun')
+      audio.play()
+      
+      const al = document.getElementById('al')
+
+      setTimeout(() => {  
+        al.classList.add("moving-al")
+        al.classList.add("al-initial-position")
+      }, 1000)
+
+      setTimeout(() => {
+        const body = document.getElementsByTagName('body')[0]
+        body.classList.add('ally')
+      }, 5000)
+    }
+  </script>
+</html>
+
+
