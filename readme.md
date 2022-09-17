@@ -1,1 +1,1 @@
-[excusemebut.wtf](www.excusemebut.wtf)
+[excusemebut.wtf](https://excusemebut.wtf)
